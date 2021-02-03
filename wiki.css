@@ -1,0 +1,264 @@
+/*------------------------------------*\
+               CSS RESET
+\*------------------------------------*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------------*\
+               CODE
+\*-------------------------------*/
+
+.container {
+  box-sizing:             border-box;
+  display: grid;
+  grid-template-columns:  1fr 9fr;
+  grid-template-rows:     auto;
+   background-color:      white;
+  }
+
+
+ 
+.item-1 {
+  grid-column-start:      1;
+  grid-column-end:        2;
+  grid-row-start:         1;
+  grid-row-end:           26;
+ padding-left:            1rem;
+  background-color:       #F5F5F5;
+}
+
+.logo {
+  width:                  5rem;
+}
+
+
+a {
+  text-decoration:        none;
+}
+
+a:hover {
+  text-decoration:        underline;
+}
+
+.item-2 {
+  grid-column-start:      2;
+  grid-column-end:        3;
+   justify-self:          end;
+ }
+
+
+
+span {
+  float:                  right;
+}
+
+.article, .talk  {
+  background-position:    right bottom;
+    display:              block;
+    float:                left;
+    height:               3.07692308em;
+    position:             relative;
+    padding-top:          1.25em;
+    padding-left:         8px;
+    padding-right:        8px;
+    font-size:            0.6rem;
+    cursor:               point;
+}
+
+.history, .edit, .read {
+      
+    display:              block;
+    float:                right;
+    height:               3.07692308em;
+    position:             relative;
+    padding-top:          1.25em;
+    padding-left:         8px;
+    padding-right:        8px;
+    font-size:            0.6rem;
+    cursor:               pointer;
+
+}
+
+.search-input {
+  float:                  right;
+  width:                  35%;
+  justify-self:           end;
+  }
+
+.heading {
+  font-size:              2rem;
+  padding:                0.5rem;
+  font-style:             italic;
+   font-weight:           bold;
+}
+
+.info {
+  padding:                0.5rem;
+  font-size:              0.8rem;
+}
+
+
+
+
+/*-----------------------------------*\
+          TWO MEDIA OBJECTS
+\*-----------------------------------*/
+
+.media-object {
+  display:                flex;
+  align-items:            flex-start; 
+}
+
+.media-object > img {
+ 
+ order:                   1;
+  width:                  45%;
+  height:                 100%;
+  padding:                0.3rem;
+}
+
+
+.media-object-2 > img {
+  width:                  30%;
+  height:                 80%;
+  padding:                0.3rem;
+}
+
+.media-object-2 {
+   display:               flex;
+  align-items:            flex-start; 
+}
+
+
+
+
+
+
+span {
+    font-weight:          bold;
+   font-style:            italic;
+}
+
+.list {
+  width:                  25%;
+  height:                 88%;
+  padding:                0.5rem;
+  background-color:       #F5F5F5;
+  margin:                 0.5rem;
+  }
+
+/*---------------------------------*\
+              FONTS
+\*---------------------------------*/
+
+li  {
+  font-size:              clamp(8px, 2vw, 14px);
+}
+
+p {
+  font-size:              0.6rem;
+}
+
+.font {
+  font-size:              clamp(13px, 3vw, 18px);
+  padding:                0.3rem;
+}
+
+.font-2 {
+  font-size:              13px;
+}
+
+.font-3 {
+  font-size:              clamp(13px, 4vw, 23px);
+  padding:                0.5rem;
+}
+
+
+
+.list-2 {
+  padding:                0.3rem;
+}
+
+.space {
+  padding:                0.5rem;
+}
+
+/*-----------------------------------*\
+         ZAPYTANIE O MEDIA
+\*-----------------------------------*/
+
+
+@media (min-width: 768px) {
+  .list {
+    position:            relative;
+    top:                 -200px;  
+  }
+  .search-input {
+    width:               25%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
